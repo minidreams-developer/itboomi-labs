@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+</head>
+<body>
+    <h1>Multimedia Tags</h1>
+    <!-- 
+        1. Images
+        2. Audio
+        3. Video
+    
+    -->
+
+    <h2>Images</h2>
+    <!-- 
+        <img src="path/to/image.jpg" alt="Description of image">  - used to embed images in a webpage
+        Attributes:
+        - src: specifies the path to the image file
+        - alt: specifies alternative text for the image
+        - width: specifies the width of the image
+        - height: specifies the height of the image
+        - px: specifies the pixel dimensions of the image
+    -->
+
+    <!-- 
+        Paths:
+        1. Absolute Path: Specifies the full URL to the image
+        2. Relative Path: Specifies the path to the image relative to the current document
+        3. External path: Specifies the path to an image hosted on another website (e.g., https://example.com/image.jpg)
+    -->
+
+    <!-- External Path -->
+    <img src="https://i.ytimg.com/vi/R3GIMedg5Uk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCVMceNVeWE02-BB4YBoDuwCL-S3A" alt="a person drawing minions in a notebook" width="500px" height="300px">
+
+    <!-- Relative Path -->
+     <img src="./Assets/Images/tall-building.jpg" alt="tall building" width="500px" height="300px">
+
+     <!-- Absolute Path -->
+<img src="A:\itboomi-labs\01.HTML\04.MULTI-MEDIA\Assets\Images\tall-building.jpg" alt="tall building">
+
+<!-- 
+    Image extensions:
+    1. .jpg or .jpeg ----- image with complex colors and details (e.g., photographs)
+    2. .png        ------ Image with little colors and sharp texts (e.g., logos, icons, graphics)
+    3. .gif        ------ Animated images (e.g., memes, short animations)  
+    4. tif or .tiff  ------ High-quality images (e.g., professional photography, printing)
+
+
+-->
+
+<h2>Audio tags</h2>
+
+    <!-- 
+        <audio>
+            <source src="path/to/audio.mp3" type="audio/mpeg">
+            <source src="path/to/audio.ogg" type="audio/ogg">
+        </audio>
+
+    -->
+
+    <audio controls>
+        <source src="./Assets/Audio/file_example_MP3_1MG.mp3" type="audio/mp3">
+        <source src="./Assets/Audio/file_example_WAV_1MG.wav" type="audio/wav">
+    </audio>
+
+</body>
+</html>
