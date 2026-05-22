@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-FORMS</title>
+</head>
+<body>
+    <h2>HTML-FORMS </h2>
+    <h2>newline</h2>
+    <!-- 
+        Forms
+         1. single line input - name, email, password, phonenumber  <input> - self closing tag
+         2. Multi line input - address <textarea> </textarea>
+         3. Single response from Multiple options - <input type="radio">  - self closing tag
+         4. Multiple response from Multiple options - <input type="checkbox">  - self closing tag
+         5. Files upload - <input type="file">  - self closing tag
+         6. label - <label> </label>
+    -->
+    <form action="" method="get">
+
+    
+    <table cellspacing="10">
+        <tr>
+            <td>
+                <label for="name">Enter your name:</label>
+               
+            </td>
+            <td>
+                 <input type="text" id="name" placeholder="Enter your name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address">Enter Your address:</label>
+                
+            </td>
+            <td>
+                <textarea id="address" placeholder="Enter your address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">Gender</label>
+                
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" id="male" name="gender"><span>Male</span>
+               
+            </td>
+            <td>
+                 <input type="radio" id="female" name="gender"><span>Female</span>
+                
+            </td>
+            <td>
+                <input type="radio" id="other" name="gender"><span>Other</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+            <td>
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+    <!-- your assignment is to work on email, passoword and phone number -->
+
+    
+</body>
+</html>
