@@ -17,7 +17,7 @@
          5. Files upload - <input type="file">  - self closing tag
          6. label - <label> </label>
     -->
-    <form action="" method="get">
+    <form action="#" method="get">
 
     
     <table cellspacing="10">
@@ -27,7 +27,7 @@
                
             </td>
             <td>
-                 <input type="text" id="name" placeholder="Enter your name">
+                 <input type="text" id="name" placeholder="Enter your name" name="name">
             </td>
         </tr>
         <tr>
@@ -36,7 +36,7 @@
                 
             </td>
             <td>
-                <textarea id="address" placeholder="Enter your address"></textarea>
+                <textarea id="address" placeholder="Enter your address" name="address"></textarea>
             </td>
         </tr>
         <tr>
@@ -48,15 +48,28 @@
         </tr>
         <tr>
             <td>
-                <input type="radio" id="male" name="gender"><span>Male</span>
+                <input type="radio" id="male" name="gender" value="male"><span>Male</span>
                
             </td>
             <td>
-                 <input type="radio" id="female" name="gender"><span>Female</span>
+                 <input type="radio" id="female" name="gender" value="female"><span>Female</span>
                 
             </td>
             <td>
-                <input type="radio" id="other" name="gender"><span>Other</span>
+                <input type="radio" id="other" name="gender" value="other"><span>Other</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="subjects">Select Subjects:</label>
+            </td>
+            <td>
+                <select id="subjects" name="subjects" multiple>
+                    <option value="maths" >Maths</option>
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="english">English</option>
+                </select>
             </td>
         </tr>
         <tr>
