@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling</title>
+    <style>
+        /* 
+            Adjacent Sibling Selector
+            combinator selector
+
+
+            referenedSelector(first-sibling) + selector(immediate sibling){
+                property: value;
+            }
+        
+        */
+
+        #about h2+p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Adjacent Sibling</h2>
+    
+    <div id="about">
+        <h2>About Section</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, illo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolore!</p>
+        <ul>
+            <li>Apple</li>
+            <li>orange</li>
+        </ul>
+        <h2>Heading 2</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, deleniti!</p>
+    </div>
+</body>
+</html>
