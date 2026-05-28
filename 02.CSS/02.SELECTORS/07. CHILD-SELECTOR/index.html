@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Selector</title>
+
+    <style>
+        #about>p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Child Selector</h2>
+    <!-- 
+        Combinator selector
+
+        referecedSelector > selector {
+            property:value;
+        }
+    -->
+
+    <div id="about">
+        <h2>About section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quod.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, odit. <small>hello small selectors</small></p>
+        <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>mango</li>
+            <li>Banana</li> <small>again small</small>
+        </ul>
+            <div>
+                <h3>nested heading</h3>
+                <p>nested paragraph - grand child</p>
+            </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, quibusdam.</p>
+    </div>
+</body>
+</html>
