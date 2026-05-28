@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendent Selector</title>
+    <style>
+        div{
+            border: 1px dashed;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
+        /* 
+            Combinator selctors - Descendent Selectors
+
+            referecedSelector(partent or grandparent) selector {
+                property: value;
+            }
+        
+        
+        */
+
+       #about p{
+        color: red;
+       }
+
+      
+    </style>
+</head>
+<body>
+    <h2>Descendent Selector</h2>
+    <!-- 
+        Combinator Selector
+    -->
+
+    <div id="about">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quisquam eaque saepe architecto a corporis quaerat porro, possimus quas veritatis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore quod impedit <small> obcaecati repudiandae aperiam. Reiciendis.</small></p>
+        <ul>
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Mango</li>
+            <li>Banana</li>
+        </ul>
+    </div>
+    <div id="projects">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, odio.</p>
+        <ul>
+            <li>To-do-apps</li>
+            <li>Task manager</li>
+            <li>Notes</li>
+            <li>Blog website</li>
+        </ul>
+    </div>
+</body>
+</html>
