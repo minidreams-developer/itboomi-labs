@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - COLORS</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+        /* Color based on names */
+        .name{
+            background-color: bisque;
+        }
+
+        /* Color based on hex values */
+        .hex{
+            background-color: #8243D9;
+        }
+
+        /* RGB based colors */
+        .rgb{
+            background-color: rgb(6, 67, 9);
+        }
+
+        /* RGBA based colors */
+        .rgba{
+            background-color: rgba(214, 113, 113, 0.358);
+        }
+
+        /* Linear-gradient */
+        .lg{
+            background: linear-gradient(90deg, red, rgb(66, 147, 66), rgb(180, 180, 75));
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS - Colors</h2>
+    <!-- 
+        1. name (red, blue, green)
+        2. hex
+        3. rgb
+        4. rgba
+        5. linear-gradient
+        6. radial-gradient
+    
+    
+    -->
+        <div class="name"></div>
+        <div class="hex"></div>
+        <div class="rgb"></div>
+        <div class="rgba"></div>
+        <div class="lg"></div>
+        <div class="rg"></div>
+</body>
+</html>
