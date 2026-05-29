@@ -18,6 +18,21 @@
             width: 45%;
             background-color: red;
         }
+
+        .absolute{
+            font-size: 20px;
+            background-color: aqua;
+        }
+
+        .relative{
+            font-size: 20px;
+            background-color: bisque;
+        }
+
+        .relative p{
+            font-size: 2em; 
+            /* 2em = 2 * 20px (parent font-size) => 40px */
+        }
     </style>
 </head>
 <body>
@@ -56,5 +71,21 @@
     <div class="parent">
         <div class="child"></div>
     </div>
+
+    <hr>
+    <!-- 
+        em unit is related to the parent's element's font-size
+        1em = 1 * parent's font size.
+    
+    -->
+
+    <div class="absolute">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, fugiat.</p>
+    </div>
+
+    <div class="relative">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores saepe suscipit, veniam quos ipsa sequi consequatur cumque magni aspernatur laudantium.</p>
+    </div>
+
 </body>
 </html>
