@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-BOX-MODEL</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            /* border: 5px;
+            border-style: dotted;
+            border-color: red; */
+
+            /* border: size style color */
+
+            border: 5px solid rgb(204, 216, 41);
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 25px */
+
+            /* padding: top right bottom left
+               padding: top&bottom rigth&left
+            */
+            padding: 20px 30px 45px;
+
+
+/* 
+                top(20)
+
+     left(30)             right(30)
+
+
+               bottom(45)             
+
+*/
+            /* margin-top: 30px;
+            margin-bottom: 50px */
+
+            /* margin: top right bottom left */
+
+            margin: 30px 50px
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS-BOX-MODEL</h1>
+    <!-- 
+        1. Content
+        2. Padding
+        3. Border
+        4. Margin
+
+        css => each and every element has a box
+        height => top and bottom
+        width => right to left
+        
+        height => content height + padding top & bottom + border top & bottom
+        width => content width + padding right & left + border right & left
+    
+    -->
+
+    <h2>Content</h2>
+    <h2>Second content</h2>
+</body>
+</html>
