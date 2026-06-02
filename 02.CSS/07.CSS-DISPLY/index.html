@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-DISPLY PROPERTIES</title>
+    <style>
+        /* converting inline element into block */
+        .block{
+            background-color: red;
+            display: block;
+            height: 100px;
+        }
+
+        /* converting a block level into inline element */
+        .inline{
+            background-color: green;
+            display: inline;
+            height: 100px;
+        }
+
+        .inline-block{
+            background-color: aqua;
+            display: inline-block;
+            height: 100px;
+        }
+
+        .none{
+            height: 100px;
+            background-color: bisque;
+            /* display: none */
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>CSS-DISPLY PROPERTIES</h1> -->
+    <!-- 
+        1. Block level -> takes full widh, can add height and width.
+        2. Inline level -> takes only content width, cannot manipulate height & width.
+        3. Inline-block
+        4. hidden
+        5. none
+    -->
+
+    <h1 class="inline">CSS Display properties</h1>
+    <span class="block">Lorem ipsum dolor sit amet.</span> <span>..............................hello</span>
+    <h2 class="inline-block">Sub Heading</h2>
+    <div class="none"></div>
+    <div class="hidden"></div>
+    <div></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur quo illum magni voluptas totam velit sequi odio. Nihil, id.</p> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam libero minus reiciendis eos alias at incidunt vitae nulla dicta architecto.</p>
+</body>
+</html>
