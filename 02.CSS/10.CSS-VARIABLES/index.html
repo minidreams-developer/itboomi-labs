@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-VARIABLES</title>
+    <style>
+        :root{
+            --primary: rgb(207, 210, 8);
+            --secondary: rgb(19, 158, 208);
+            --pad: 25px;
+            --mar: 25px;
+            --bord: 2px solid black;
+            --para-color: rgb(17, 124, 160);
+        }
+
+        h1{
+            color: var(--primary);
+        
+        }
+        h2{
+            color: var(--secondary);
+        }
+        p{
+            padding: var(--pad);
+            margin: var(--mar);
+            border: var(--bord);
+            color: var(--para-color);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS - Variables</h1>
+    <!-- 
+        1. We select properties
+        2. Create it as variable
+        3. Use it wherever we want
+
+        Syntax
+        :root{
+            --variablename: value;
+            --variablename: value;
+            --variablename: value;
+            --variablename: value;
+        }
+    
+    -->
+
+    <h2>Sub Heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis expedita, nesciunt veritatis facere id recusandae mollitia saepe modi porro!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis expedita, nesciunt veritatis facere id recusandae mollitia saepe modi porro!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis expedita, nesciunt veritatis facere id recusandae mollitia saepe modi porro!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis expedita, nesciunt veritatis facere id recusandae mollitia saepe modi porro!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis expedita, nesciunt veritatis facere id recusandae mollitia saepe modi porro!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis expedita, nesciunt veritatis facere id recusandae mollitia saepe modi porro!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure blanditiis expedita, nesciunt veritatis facere id recusandae mollitia saepe modi porro!</p>
+</body>
+</html>
