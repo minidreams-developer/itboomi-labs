@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS- Backgrounds</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .image-one{
+            /* background: url("Assets/OIP.webp");
+            height: 150vh;
+            width: 100vw;
+            background-color: aqua;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-attachment: fixed; */
+
+            background:aqua url("Assets/OIP.webp") no-repeat fixed center/contain ;
+            height: 100vh;
+            width: 100vw;
+
+        }
+        /* 
+            background: [background-color] [background-image] [background-repeat] [background-attachment] [backgroundposition]/[background-size]
+        
+        */
+    </style>
+</head>
+<body>
+    <h1>CSS - backgrounds</h1>
+    <!-- 
+        1. Background image
+                    background: url("image url or path")
+        2. Background repeats
+                    background-repeat: 1. repeat (default)
+                                       2. repeat-x
+                                       3. repeat-y
+                                       4. no-repeat
+
+        3. Background position
+                    background-position: left or right or top or bottom or center
+        4. Background Size
+                    background-size: auto (default), cover, contain
+
+        5. Background Attachement
+                    background-attachment: scroll or fixed
+    
+    -->
+
+
+    <div class="image-one"></div>
+    <div class="image-two"></div>
+</body>
+</html>
