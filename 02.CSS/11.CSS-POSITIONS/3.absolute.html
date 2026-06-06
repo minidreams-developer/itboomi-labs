@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute position</title>
+    <style>
+        /* 
+            Element is positioned based on the nearest ancester
+        */
+        p{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        div{
+            height: 300px;
+            background-color: aqua;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        .main{
+            background-color: greenyellow;
+            position:absolute;
+            top: 50px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a normal paragraph</p>
+    <div>
+        <p class="main">This is a absolute positioned paragraph</p>
+    </div>
+    <p>This is a normal paragraph</p>
+</body>
+</html>
