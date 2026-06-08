@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale - css animation</title>
+    <style>
+        .scale{
+            height: 200px;
+            width: 200px;
+            background-color: bisque;
+            margin: 0 auto;
+        }
+
+        .scale:hover{
+            transform: scale(0.5, 1);
+            /* transform: scaleX(1.5);
+            transform: scaleY(0.8); */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Transform Scale</h2>
+
+    <!-- 
+        Scale => will be streached or increased in size
+        syntax:
+             transform:scale(x, y)
+                x => greater than 1, size will be increased. if value is between 0 to 1 size will be reduced.
+                y => same as above. if we omitted, x value will be taken.
+ 
+    -->
+
+    <div class="scale">
+        <h1>Scale Animation</h1>
+    </div>
+</body>
+</html>
