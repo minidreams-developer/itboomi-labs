@@ -1,44 +1,218 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    .container {
-      width: 400px;
-      height: 120px;
-      border: 2px solid #ccc;
-      position: relative;
-      margin: 50px auto;
-      overflow: hidden;
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#87ceeb;
+    overflow:hidden;
+}
+
+.scene{
+    position:relative;
+    width:700px;
+    height:300px;
+}
+
+.dog{
+    position:absolute;
+    left:150px;
+    top:120px;
+    animation: run 0.6s infinite linear;
+}
+
+.body{
+    width:140px;
+    height:70px;
+    background:#c68642;
+    border-radius:40px;
+    position:relative;
+    animation: bodyBounce .6s infinite ease-in-out;
+}
+
+.head{
+    width:60px;
+    height:60px;
+    background:#c68642;
+    border-radius:50%;
+    position:absolute;
+    right:-40px;
+    top:-10px;
+    transform-origin:left center;
+    animation: headBob .6s infinite ease-in-out;
+}
+
+.ear{
+    width:18px;
+    height:35px;
+    background:#8b5a2b;
+    border-radius:20px;
+    position:absolute;
+    left:15px;
+    top:-10px;
+    transform-origin:top center;
+    animation: earFlap .6s infinite ease-in-out;
+}
+
+.tail{
+    width:60px;
+    height:12px;
+    background:#c68642;
+    position:absolute;
+    left:-45px;
+    top:15px;
+    border-radius:10px;
+    transform-origin:right center;
+    animation: tailWag .3s infinite ease-in-out;
+}
+
+.leg{
+    width:14px;
+    height:65px;
+    background:#8b5a2b;
+    position:absolute;
+    bottom:-55px;
+    border-radius:20px;
+    transform-origin:top center;
+}
+
+.l1{ left:20px; animation: legFront 0.6s infinite linear; }
+.l2{ left:50px; animation: legBack 0.6s infinite linear; }
+.l3{ left:90px; animation: legBack 0.6s infinite linear reverse; }
+.l4{ left:120px; animation: legFront 0.6s infinite linear reverse; }
+
+.shadow{
+    position:absolute;
+    width:170px;
+    height:18px;
+    background:rgba(0,0,0,.15);
+    border-radius:50%;
+    top:220px;
+    left:135px;
+    animation: shadowPulse .6s infinite ease-in-out;
+}
+
+@keyframes run{
+    0%,100%{
+        transform:translateY(0);
     }
-
-    .box {
-      width: 50px;
-      height: 50px;
-      background: dodgerblue;
-      position: absolute;
-      top: 35px;
-
-      animation: moveAndScale 3s infinite ease-in-out;
+    50%{
+        transform:translateY(-15px);
     }
+}
 
-    @keyframes moveAndScale {
-      0% {
-        transform: translateX(0) scale(1);
-      }
-
-      50% {
-        transform: translateX(300px) scale(1.5);
-      }
-
-      100% {
-        transform: translateX(0) scale(1);
-      }
+@keyframes bodyBounce{
+    0%,100%{
+        transform:
+            rotate(-2deg)
+            scale(1,1);
     }
-  </style>
+    50%{
+        transform:
+            rotate(2deg)
+            scale(1.03,.97);
+    }
+}
+
+@keyframes headBob{
+    0%,100%{
+        transform:
+            rotate(-8deg)
+            translateY(0);
+    }
+    50%{
+        transform:
+            rotate(8deg)
+            translateY(6px);
+    }
+}
+
+@keyframes earFlap{
+    0%,100%{
+        transform:
+            rotate(15deg)
+            skew(0deg);
+    }
+    50%{
+        transform:
+            rotate(-35deg)
+            skew(10deg);
+    }
+}
+
+@keyframes tailWag{
+    0%,100%{
+        transform:rotate(35deg);
+    }
+    50%{
+        transform:rotate(-35deg);
+    }
+}
+
+@keyframes legFront{
+    0%{
+        transform:rotate(-40deg) scaleY(1);
+    }
+    50%{
+        transform:rotate(40deg) scaleY(.9);
+    }
+    100%{
+        transform:rotate(-40deg) scaleY(1);
+    }
+}
+
+@keyframes legBack{
+    0%{
+        transform:rotate(40deg) scaleY(.9);
+    }
+    50%{
+        transform:rotate(-40deg) scaleY(1);
+    }
+    100%{
+        transform:rotate(40deg) scaleY(.9);
+    }
+}
+
+@keyframes shadowPulse{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(.85);
+    }
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <div class="box"></div>
-  </div>
+
+<div class="scene">
+
+    <div class="shadow"></div>
+
+    <div class="dog">
+
+        <div class="body">
+
+            <div class="tail"></div>
+
+            <div class="head">
+                <div class="ear"></div>
+            </div>
+
+            <div class="leg l1"></div>
+            <div class="leg l2"></div>
+            <div class="leg l3"></div>
+            <div class="leg l4"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
