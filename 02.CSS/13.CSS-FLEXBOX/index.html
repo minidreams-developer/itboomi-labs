@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-FLEXBOX</title>
+    <style>
+        .parent{
+            border: 2px solid black;
+            height: 80vh;
+            background-color: bisque;
+            display: flex;
+            /* Flex Container Properties */
+            /* flex-direction: row;
+            flex-wrap: nowrap; */
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .child{
+            border: 2px solid red;
+            height: 150px;
+            width: 150px;
+            padding: 50px;
+            background-color: aqua;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>CSS-FLEXBOX</h2>
+
+    <!-- 
+        1. row
+            main-axis: x - axis
+            cross-axis: y - axis
+        2. column: 
+            main-axis: y - axis
+            cross-axis: x - axis
+    -->
+
+    <!-- 
+        Flex-box:
+            1. flexbox -> 2d layout model (x or y)
+            2. Two types of styles
+                    i) flex container properties (parent)
+                    ii) flex item properties (each individual child)
+    -->
+   <!-- 
+        Flex container Properties
+        1. flex-direction (default: row)
+                row, row-reverse, column, column-reverse 
+        2. flex-wrap (default nowrap)
+                wrap, nowrap, wrap-reverse
+        3. flex-flow
+                flex-direction flex-wrap
+        4. Justify-content (default: flex-start)
+                flex-start, flex-end, center, space-between, space-around, space-evenly
+        5. align-items
+                flex-start, flex-end, center, baseline, streatch
+   -->
+
+   <div class="parent">
+    <div class="child child-1">Child One</div>
+    <div class="child child-2">Child Two</div>
+    <div class="child child-3">Child Three</div>
+   </div>
+  </body>
+</html>
