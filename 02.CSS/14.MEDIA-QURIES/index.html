@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+
+    <style>
+        @media screen and (max-width: 599px){
+            /* Put your css for Small screen devices */
+            body{
+                background-color: red;
+            }
+        }
+
+
+        @media screen and (min-width: 600px) and (max-width: 900px){
+
+            body{
+                background-color: blue;
+            }
+        }
+
+        @media  screen and (min-width: 900px) {
+
+            body{
+                background-color: bisque;
+                
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS - Media Query</h1>
+    <!-- 
+        Breaking Points
+        i) extra small screen => 600px and below
+        ii) small screen => 600px to 768px
+        iii) medium devices => 768px to 992px
+        iv) large devices => 992px to 1200px
+        v) extra large devices => 1200px  +
+    
+    
+        syntax:
+
+        @media 'media-type' and (media-feature){
+        
+
+        
+        }
+
+        media-type: screen, print, all
+        media-feature: max and min widh
+                       max and min height
+
+
+    -->
+</body>
+</html>
