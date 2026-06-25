@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOGICAL OPERATOR</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>LOGICAL OPERATOR</h1>
 
     <script>
-        /*
+      /*
             LOGICAL OPERATOR
 
             1. OR                     ||
@@ -20,8 +20,7 @@
         
         */
 
-
-        /*
+      /*
             a + b => a, b are operands, + => operator (Binary operator)
             OR => it will check for the first true value
             it access two operanda at a time.
@@ -39,17 +38,16 @@
         
         */
 
-    console.log("OR===>", 0 || 1 || null)    // true or 1
+      console.log("OR===>", 0 || 1 || null); // true or 1
 
-    // first truthy value output
-    console.log("OR TRUE ====>", null || null || null || 4) // 0, "", null, undefined, NaN => false
+      // first truthy value output
+      console.log("OR TRUE ====>", null || null || null || 4); // 0, "", null, undefined, NaN => false
 
-   // if all are false, return the last false value
-    console.log("OR FALSE ====>",  null || null || null || 0);
+      // if all are false, return the last false value
+      console.log("OR FALSE ====>", null || null || null || 0);
 
-
-    console.log("===========================AND============================")
-    /*
+      console.log("===========================AND============================");
+      /*
         AND operator checks for the first false value
         a && b
             return a if it is false
@@ -62,17 +60,36 @@
     
     */
 
-    // it find the first falsy value
-    console.log("AND====>", 0 && 1 && null);
+      // console.log("Undefined", age)
+      // it find the first falsy value
+      console.log("AND====>", 0 && 1 && null);
 
-    // if it is all false, it finds the first falsy value
-    console.log("AND FALSE====>", 0 && null && 0)
+      // if it is all false, it finds the first falsy value
+      console.log("AND FALSE====>", 0 && null && 0);
 
-    //all are true
-    console.log("AND TRUE===.", 1 && 2 && 3 && 4);
-       
-    
-    
+      //all are true
+      console.log("AND TRUE===.", 1 && 2 && 3 && 4);
+
+      // ! => try working out
+
+      // Nullish coalcasing operator
+      // used to check whether the variable is defined or not
+      // a ?? b => if a is defined , then output a. if then output b;
+
+      let c = 545;
+
+      console.log("Nullish coalcashing===>", b ?? null ?? c);
+
+      if (true) {
+        console.log("if block");
+        if (true) {
+        }
+      } else {
+        console.log("else block");
+      }
+
+      // basic loops => while, do..while, for(;;)
+      // Conditional rendering ( if...else )
     </script>
-</body>
+  </body>
 </html>
