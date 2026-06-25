@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGICAL OPERATOR</title>
+</head>
+<body>
+    <h1>LOGICAL OPERATOR</h1>
+
+    <script>
+        /*
+            LOGICAL OPERATOR
+
+            1. OR                     ||
+            2. AND                    &&
+            3. NOT                    !
+            4. Null coalescasing      ??
+        
+        
+        */
+
+
+        /*
+            a + b => a, b are operands, + => operator (Binary operator)
+            OR
+            it access two operanda at a time.
+            a || b || c || d || e
+
+                    if a is true, it returns value of a or true
+                    if a is false / b is true, then it returns the value of b
+
+                    true || true => true
+                    true || false => true
+                    false || true => true
+                    false || false => false
+        
+        
+        
+        */
+
+    console.log("OR===>", 0 || 1 || null)    // true or 1
+
+    // first truthy value output
+    console.log("OR TRUE ====>", null || null || null || 4) // 0, "", null, undefined, NaN => false
+
+   // if all are false, return the last false value
+    console.log("OR FALSE ====>",  null || null || null || 0);
+    
+    </script>
+</body>
+</html>
