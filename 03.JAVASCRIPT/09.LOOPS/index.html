@@ -1,30 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loops</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Basic Loops</h1>
 
     <script>
-        // Loops
-        // It executing a set of statement in repeat until some condition met.
-        // console or print 1 to 10
-        console.log(1)
-        console.log(2);
-        console.log(3);
-        
+      // Loops
+      // It executing a set of statement in repeat until some condition met.
+      // console or print 1 to 10
+      console.log(1);
+      console.log(2);
+      console.log(3);
 
-        // Basic Loops
-        // Three types of basic loops
+      // Basic Loops
+      // Three types of basic loops
 
-        // 1. while
-        // 2. do...while
-        // 3. for(;;)
+      // 1. while
+      // 2. do...while
+      // 3. for(;;)
 
-        /*
+      /*
             Loops creation procedure
             1. Initialization => starting of loop
             2. condition => when the loop end
@@ -32,9 +31,9 @@
         
         */
 
-        // while => entry check loop
-        // syntax
-        /*
+      // while => entry check loop
+      // syntax
+      /*
             let i = value;
             while(condition){
                 loop body
@@ -45,17 +44,44 @@
         
         */
 
-        // requirement -> print 1 to 10
-        // unary operator ()
-                                                // Iteration-1           // Iteration-2          // Iteration 10       iteration 11
-        let i = 1;                               // i = 1;                i = 2                   i = 10                i = 11
-        while(i <= 10){                          // 1 <= 10 => true       2 <= 10 => true         10 <= 10 =>true   11 <= 10 false
-            console.log("Value if I", i);        // Value of I, 1         Value of I, 2           Value of I, 10
-            i++;                                 // 1++ => 2              2++ => 3                10++ => 11
-            
-        }
+      // requirement -> print 1 to 10
+      // unary operator ()
+      // Iteration-1           // Iteration-2          // Iteration 10       iteration 11
+      let i = 0; // i = 1;                i = 2                   i = 10                i = 11
+      while (i <= 10 && i > 0) {
+        // 1 <= 10 => true       2 <= 10 => true         10 <= 10 =>true   11 <= 10 false
+        console.log("Value if I", i); // Value of I, 1         Value of I, 2           Value of I, 10
+        i++; // 1++ => 2              2++ => 3                10++ => 11
+      }
 
-        
+      // requirement -> print first 10 even numbers   4/2 => 2 - 0,
+
+                                                         // Iteration 1                       Iteration 2
+      let j = 2;                                         // j = 2;                            j = 3
+      while (j <= 20) {                                  // 2 <= 20 => true                   3 <= 20 => true 
+        if (j % 2 === 0) {                               // 2 % 2 === 0 => true               3 % 2 === 1 => false
+          console.log("Even Number", j);                 // Even Number, 2                    skip the if block
+        }                                                // 2++ => 3                           3++ => 4
+        j++;
+      }
+
+
+      // ------------------------------------------------------------------------------------------
+      // do.....while() => exit check loop
+      // syntax
+      /*
+        initialization (let i = value)
+        do{
+            loop body
+            Increament/decrement
+        }while(condition)
+      */
+     // requirement print 1 to 10
+     let k = 0;
+     do{
+        console.log("Do-loop===>", k);
+        k++;
+     }while(k <= 10 && k > 0)
     </script>
-</body>
+  </body>
 </html>
