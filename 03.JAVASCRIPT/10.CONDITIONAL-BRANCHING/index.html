@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Branching</title>
+</head>
+<body>
+    <h1>Conditional Branching</h1>
+
+
+    <script>
+        // Conditional Branching
+        /*
+            1. "if" statement
+            2. "else" clause
+            3. mulitple if...clauses
+            4. conditional operator
+
+
+
+            Block of code
+            {
+                let a = 10;
+                let b = 20;
+                let c = a + b;
+                console.log(c);
+            }
+
+            if statement
+            syntax:
+
+            if (condition){
+                    block of code runs if condition pass / true
+                    statements (lines of code)
+            
+            }
+                
+         
+        */
+
+        // let a = 100;
+        // let b = 20;
+
+
+        // if(a > b){   // 100 > 20 -> true
+        //     console.log("Inside the if-block")
+        //     console.log("A is greater than B")
+        // }
+
+
+
+        // // number => odd or even
+        // let number = prompt("Enter any number")
+
+        // if(number % 2 === 0){
+        //     // even block
+        //     alert(`The entered number: ${number} is EVEN number`)
+        // }else{
+        //     alert(`The entered number: ${number} is ODD number`)
+        // }
+
+
+        /*
+            Multiple if....
+            if (condition === true){
+                    if block works
+            
+            }else if (condition === true){
+                    else if block works
+            }else if (condition === true){
+                    else if block works
+            
+            }else {
+                else block works
+            }
+        
+        */
+
+
+        /*
+            Blood Doner - eligibility
+            1. age >= 18
+            2. weight >= 60
+            3. blood pressure <= 100
+            4. diseases == false
+            5. alchocol == false
+        
+        
+        
+        */
+
+        // let name = prompt("Enter your name?");
+        // let age = prompt("Enter your age?");
+        // let weight = prompt("Enter your weight?")
+        // let bp = prompt("Enter your Maximum Blood Pressure?")
+        // let diseases = confirm("Do you have any diseases?");
+        // let alchocol = confirm("Have you consumed alchocol in last 24hrs?")
+
+
+
+        // if (age < 18 || age > 100){
+        //     console.log("You are not eligible due to age")
+        // }else if(weight < 60){
+        //     console.log("You are not eligible due to low weight")
+        // } else if(bp > 100){
+        //     console.log("You are not eligible due to High BP")
+        // } else{
+        //     console.log(`Hi ${name}, You are eligible to Donate Blood.`)
+        // }
+
+        // your asssignment -> include additional conditions and complete the above. 
+
+        /*
+            Conditional Operator
+            Syntax
+
+            condition ? true : false
+        
+        */
+
+        let a = 10;
+        let b = 20;
+
+        // binary
+        // a + b = c    => + ( a, b)
+
+        
+
+        a > b ? console.log("A is greater than B") : console.log("A is less than B")
+    </script>
+</body>
+</html>
