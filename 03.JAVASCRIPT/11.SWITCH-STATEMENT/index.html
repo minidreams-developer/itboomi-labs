@@ -1,16 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SWITCH-INTRO</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Switch Statement</h1>
 
-
     <script>
-        /*
+      /*
             switch(condition){
                     case value-1: condition === vlaue-1
                         statement
@@ -27,6 +26,32 @@
             }
         
         */
+
+      // let name = prompt("Enter your name?")
+
+      // //toLowerCase()
+
+      // console.log(name.toLowerCase())
+
+      let day = prompt("Enter any day (Sunday to Wednesday)");
+
+      switch (day.toLowerCase()) {
+        case "sunday":
+          console.log("User entered", day);
+          break;
+        case "monday":
+          console.log("User entered", day);
+          break;
+        case "tuesday":
+          console.log("User entered", day);
+          break;
+        case "wednesday":
+          console.log("User entered", day);
+          break;
+
+        default:
+          console.log("Enter only the day between Sunday to Wednesday");
+      }
     </script>
-</body>
+  </body>
 </html>
