@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions Basics</title>
+  </head>
+  <body>
+    <h1>Functions Basics</h1>
+
+    <script>
+      // Functions
+      // input  => process  => output
+      /*
+            1. Function declaration
+            2. Function calling
+
+
+            Syntax:
+            1. Function Declaration
+            
+            function functionName(parameter-1, parameter-2,...parameter-n){
+            
+                function body
+            
+            }
+
+            2. Function Calling
+            functionname(argument-1, argument-2,..argument-n)
+        
+        
+        */
+
+      // i need a function which will get three inputs. It needs to add these three value and console the result.
+
+      // Function Declaration
+      function addition(numOne, numTwo, numThree) {
+        // numOne = 10, numTwo = 20, numThree = 30
+        let sum = numOne + numTwo + numThree; // let sum = 10 + 20 + 30    => let sum = 60;
+        // console.log("Output value is", sum)        // sum = 60
+
+        return sum;
+        console.log("After return console");
+      }
+
+      // Function calling
+      // console.log(addition(10, 20, 30))
+      addition(10, 20, 30);
+
+      // Function delaration
+      // Arrow function
+    
+
+      let name = prompt("What is the your name?");
+      let age = +prompt("What's your age?");
+
+        isEligible(name, age);
+
+      console.log("age==>", age);
+
+      function isEligible(name, age) {   // Hoisting
+        if (age > 18) {
+          // "66" > 18
+          console.log(`Hi ${name},You are Eligible `);
+        } else {
+          console.log(`Hi ${name}, You are Not eligible`);
+        }
+      }
+    </script>
+  </body>
+</html>
