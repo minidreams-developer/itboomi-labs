@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object - Basics</title>
+</head>
+<body>
+    <h1>Object Basics</h1>
+
+    <script>
+        // Object basics
+        // Upto now we have seen  - primitive data types ( one variable holds one value - string, num, bool, null, undefined)
+        // Objects - Non-primitive data types (adanced -> it can hold multiple types data)
+
+
+
+        /*
+            let variable = {
+                    key: value,
+                    key: value,
+                    key: value
+            }
+        
+        
+        */
+        let user = {
+            name: "john", // string
+            age: 25,     // number
+            isAdult: true  // boolean
+        }
+
+
+        console.log("user objects====>", user)
+
+
+        // Adding & removing data
+        // Syntax
+        // objectname.propertyname
+
+        console.log("username===>",user.name )  // dot notation
+
+        // update value
+        user.name = "Jack";
+        console.log("username===>",user.name )  // dot notation
+
+        // Adding properties
+        user.phone = "+91478589685";  // reference based updates
+        console.log("user object==>", user)
+
+
+        // Deleting properties
+        // delete objectname.existingProperty
+
+        delete user.isAdult;
+        console.log("user after admin delete===>", user)
+    </script>
+</body>
+</html>
