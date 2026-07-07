@@ -47,17 +47,15 @@
       // console.log(addition(10, 20, 30))
       addition(10, 20, 30);
 
-    
-    
-
       let name = prompt("What is the your name?");
       let age = +prompt("What's your age?");
 
-        isEligible(name, age);
+      isEligible(name, age);
 
       console.log("age==>", age);
 
-      function isEligible(name, age) {   // Hoisting
+      function isEligible(name, age) {
+        // Hoisting
         if (age > 18) {
           // "66" > 18
           console.log(`Hi ${name},You are Eligible `);
@@ -66,9 +64,37 @@
         }
       }
 
-        // Function delaration
+      // Function delaration
       // Arrow function
       // objects
+
+      //-------------------------------fUNCTION EXPRESSION-------------------------------
+
+      /*
+        Normal Function:
+             function addition(parameter-1,,,,parameter-n){
+                  block of code
+                  return;
+             }
+
+        Function Expression:
+            let variable = function(parameter-1,,,,parameter-n){
+                block of code
+                return;
+            }
+
+            variable(arg-1,,,arg-n)
+      
+      
+      */
+
+      let addFunction = function (numOne, numTwo) {
+        let sum = numOne + numTwo;
+
+        return sum;
+      };
+
+      console.log(addFunction(45, 56))
     </script>
   </body>
 </html>
