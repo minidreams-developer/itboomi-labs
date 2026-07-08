@@ -1,21 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object - Basics</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Object Basics</h1>
 
     <script>
-        // Object basics
-        // Upto now we have seen  - primitive data types ( one variable holds one value - string, num, bool, null, undefined)
-        // Objects - Non-primitive data types (adanced -> it can hold multiple types data)
+      // Object basics
+      // Upto now we have seen  - primitive data types ( one variable holds one value - string, num, bool, null, undefined)
+      // Objects - Non-primitive data types (adanced -> it can hold multiple types data)
 
-
-
-        /*
+      /*
             let variable = {
                     key: value,
                     key: value,
@@ -24,36 +22,69 @@
         
         
         */
-        let user = {
-            name: "john", // string
-            age: 25,     // number
-            isAdult: true  // boolean
-        }
+      let user = {
+        name: "john", // string
+        age: 25, // number
+        isAdult: true, // boolean
+      };
 
+      console.log("user objects====>", user);
 
-        console.log("user objects====>", user)
+      // Adding & removing data
+      // Syntax
+      // objectname.propertyname
 
+      console.log("username===>", user.name); // dot notation
 
-        // Adding & removing data
-        // Syntax
-        // objectname.propertyname
+      // update value
+      user.name = "Jack";
+      console.log("username===>", user.name); // dot notation
 
-        console.log("username===>",user.name )  // dot notation
+      // Adding properties
+      user.phone = "+91478589685"; // reference based updates
+      console.log("user object==>", user);
 
-        // update value
-        user.name = "Jack";
-        console.log("username===>",user.name )  // dot notation
+      // Deleting properties
+      // delete objectname.existingProperty
 
-        // Adding properties
-        user.phone = "+91478589685";  // reference based updates
-        console.log("user object==>", user)
+      delete user.isAdult;
+      console.log("user after admin delete===>", user);
 
+      // Object methods
+      // nested Objectsn(string, number, boolean, object)
 
-        // Deleting properties
-        // delete objectname.existingProperty
+      let userDetails = {
+        name: "Jack",
+        age: 34,
+        gender: "male",
+        isAdult: true,
+        address: {
+          drNo: "8/098",
+          street: "Main street",
+          pinCode: 548562,
+          contact: {
+            phone: 5848569856,
+            email: "abc@gmail.com",
+            fax: 585698
+            
+          },
+        },
+      };
 
-        delete user.isAdult;
-        console.log("user after admin delete===>", user)
+      console.log("userDetails object======>", userDetails);
+
+      console.log("user name=>", userDetails.name);
+      console.log("user dr no===>", userDetails.address.drNo);
+
+      console.log("user fax===>", userDetails.address.contact.fax);
+
+      userDetails.address.contact.telephone = "+985874856952";
+
+      console.log("userDetails========>", userDetails);
+
+      delete userDetails.address.contact.telephone;
+
+      console.log("userDetails========>", userDetails);
     </script>
-</body>
+  </body>
 </html>
