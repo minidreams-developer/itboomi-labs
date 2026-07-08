@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obejct methods</title>
+</head>
+<body>
+    <h1>Object Methods</h1>
+
+
+    <script>
+        // while, do..while, for
+
+        // for..in loop
+
+        /*
+
+        for(let key in objectname){
+            loop body (increement or decrement -> no needed)
+        
+        }
+        
+        
+        */
+
+        let person = {
+            name: "jack",
+            age: 25,
+            city: "Coimbatore"
+        }
+
+        for(let key in person){
+            console.log("looped values===>", key)    // name
+            console.log("looked values====>", person[key]) // person[name] = jack
+        }
+
+
+        /*
+            key = name
+            key = age
+            key = city
+
+
+           object.property 
+           person.name => jack
+           person.key => jack, person.key => 25
+        
+        */
+
+
+        let marks = {
+            maths: 80,
+            science: 90, 
+            english: 95
+        }
+
+// x+=y => x = x+y
+        for(let key in marks){
+            marks[key] +=5;         
+        }
+
+
+        console.log("Marks===>", marks)
+    </script>
+</body>
+</html>
