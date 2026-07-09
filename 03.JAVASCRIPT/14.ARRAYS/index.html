@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arrays - Basics</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Arrays basics</h1>
 
     <script>
-        /*
+      /*
             Arrays -> one of the non-primitive data types
             object => collection of data in key:value pair
 
@@ -24,9 +24,124 @@
         
         */
 
-        // array - remaining
-        // string methods
-        // number methods
+      // array - remaining
+      // string methods
+      // number methods
+
+      // Declaration
+      /*
+            Array -- declaration
+            1. variable = []
+            2. new Array();
+
+
+            fruits:
+            1. let fruits = ["apple", "banana", "orange"]
+            2. let fruits = new Array()   => let fruits = []
+        
+        */
+
+      // Creating array
+      let fruits = ["apple", "banana", "mango", "kiwi", "orange"];
+
+      console.log("Fruits Array=====>", fruits);
+
+      // Accessing array elements
+      // by index
+      // syntax
+      // arrayName[index]
+
+      console.log(fruits[0]);
+      console.log(fruits[1]);
+      console.log(fruits[2]);
+      console.log(fruits[3]);
+      console.log(fruits[4]);
+
+      console.log("fruits length", fruits.length);
+
+      // for..each
+
+      for (let i = 0; i < fruits.length; i++) {
+        // i = 0; 0 < 5(true); 0++
+        console.log(fruits[i]); // i= 0
+      }
+
+      // Add elements, update elements, remove elements
+      // Add element
+      // arrayName[newIndex] = value;
+
+      // update element
+      // arrayName[existingIndex]
+
+      let subjects = [];
+
+      console.log("Subjects====>", subjects);
+
+      // add
+      subjects[0] = "Tamil";
+      subjects[1] = "English";
+
+      console.log("Subjects======>", subjects);
+
+      // update
+      subjects[0] = "Science";
+
+      console.log("Subjects====>", subjects);
+
+      // delete
+      // delete arrayName[index]
+
+      delete subjects[1];
+
+      console.log("Subjects====>", subjects);
+
+      // Mix of arrays
+      let user = [
+        "john",
+        25,
+        [545525, "arun@gmail.com"],
+        { balance: 635256, mobile: "airtel" },
+      ];
+
+      console.log("mixed-array====>", user);
+
+      // accessing mixed array values
+      console.log("name==>", user[0]);
+      console.log("age===>", user[1]);
+      console.log("address==>", user[2]);
+      console.log("user details==>", user[3]);
+
+      // accessing objects
+      console.log("user object detaisl==>", user[3].mobile)
+
+      // accessing arrays
+      console.log("user array===>",user[2][0])
+
+
+      // Array methods
+      // pop() & push () -> value remove & add from last
+      // shift () / unshift() -> value remove & add from first (it uses more computational power)
+
+
+      let weeks = ['sunday', 'monday', 'tuesday', 'wednesday'];
+
+      // push -> syntax
+      // array.push("values", "values")
+
+      weeks.push('thursday', 'friday', 'saturday')
+
+
+      console.log("Weeks array===>", weeks);
+
+      // pop -> sytax
+      // array.pop()
+
+      weeks.pop();
+
+    console.log("Weeks array===>", weeks);
+
+
+    // shift() / unshift()
     </script>
-</body>
+  </body>
 </html>
