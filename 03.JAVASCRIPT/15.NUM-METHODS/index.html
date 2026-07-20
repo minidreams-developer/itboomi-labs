@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Methods</title>
+  </head>
+  <body>
+    <h1>Number Methods</h1>
+
+    <script>
+      console.log("Number methods");
+      // Number methods
+      // 1. Representing numbers.
+      /*
+            eg: 100,000,00
+
+            let number = 1_000_000_00
+
+          ============================================
+           using "e"
+           let number = 10000000; => take the 0 as e's count. 
+           let number = 1e7;
+        
+        */
+      let number1 = 1_000_000_00;
+      console.log("underscored numbers==>", number1);
+
+      let number2 = 120000000;
+      let number2_1 = 12e7; // 12 * 10000000
+
+      console.log(`Number1=> ${number2} & number2=> ${number2_1}`);
+
+      /*
+            Rounding => Rounding decimal numbers.
+            1. Math.floor() -> round down
+
+            23.45 => floor() => 23
+
+
+            2. Math.ceil() -> round up
+
+            23.45 => ceil() => 24
+        
+        */
+
+      let number3 = 45.67;
+      console.log("math-floor", Math.floor(number3));
+
+      let number4 = 45.67;
+      console.log("math-ceil", Math.ceil(number4));
+
+      /*
+            Math.round(variable or value)
+
+            .5 => base point
+            >= .5 => Rounds up
+            < .5 => Round down
+        
+        */
+
+      let number5 = 545.54; // 546
+      let number6 = 545.49; // 545
+      let number7 = 545.6; // 546
+
+      console.log("math-round=>", Math.round(number5));
+      console.log("math-round=>", Math.round(number6));
+      console.log("math-round=>", Math.round(number7));
+
+      /*
+            Math.trunc()
+
+            it will remove the decimal value entirely
+
+            eg: 45.87 => 45, 33.23 => 33
+        
+        
+        */
+
+      let number8 = 89.78987;
+      console.log("math-trunc", Math.trunc(number8));
+
+      /*
+            Math.random() -> 0.0 to 0.99
+        
+        
+        
+        */
+
+      console.log("math-random", Math.random());
+
+      console.log("math-random", Math.random() * 100);
+
+      console.log("math-random", Math.trunc(Math.random() * 1000000));
+
+      /*
+            Math.min(), Math.max() => workout yourself
+            Math.pow(number, number)
+         
+         */
+
+      console.log("math-min", Math.min(1, 25, 65, 85, 1, -2, -4, 0));
+
+      console.log("math-pow", Math.pow(2, 5));  // 2^5 => 2 * 2 * 2 * 2 * 2 -> 32
+
+
+      /*
+        parseInt() => number + string => number      => 32b => 32
+                                                    => k45 => NaN
+      
+      */
+
+      console.log(parseInt("12px"));   // 12
+      console.log(parseInt("123Hello"));   // 123
+      console.log(parseInt("Hello123")); // NaN
+      console.log(parseInt("12.56px"));  // 12
+      
+      
+
+      /*
+        parseFloat() => workout yourself
+      
+      
+      */
+      
+      
+      
+      
+      
+
+
+
+    </script>
+  </body>
+</html>
