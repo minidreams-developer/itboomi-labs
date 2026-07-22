@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map & Set</title>
+</head>
+<body>
+    <h1>Map & Set Data structure</h1>
+
+    <script>
+        /*
+            Map => similar like objects
+            
+            {
+                name: "john",
+                age: 34,
+            }
+        
+            Syntax:
+            let varName = new Map()
+
+            supporting methods
+            1. map.set("key", "value") => add new propert with key and value
+            2. map.get("key")
+            3. map.has("key")
+            4. map.clear() => remove all the proerties
+            5. map.delete("key") => remove that particular property
+        
+        */
+
+        let subjects = new Map();
+
+        console.log("map-constructor=>", subjects)
+
+        let fruits = ["apple", "banana", "orange"]
+        let veggies = ["carrot", "potato", "penut"]
+        let address = {
+            street: "ABC street",
+            pin: 454565,
+            phone: 45458455542
+        }
+
+        // Add properties
+        subjects.set("name", "John")
+        subjects.set("age", 34)
+        subjects.set(1, "Gold")
+        subjects.set(2, "Silver")
+        subjects.set(fruits, "vitamin rich fruits")
+        subjects.set(["apple", "banan"], "vitamin less fruit")
+        subjects.set(address, veggies)
+
+          console.log("map-constructor=>", subjects)
+
+
+        // Get properties
+        console.log(subjects.get("name"));
+        console.log(subjects.get(1));
+        console.log(subjects.get(fruits));
+
+
+        // Clear properties
+
+        subjects.clear()
+
+        console.log(subjects);
+        
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
