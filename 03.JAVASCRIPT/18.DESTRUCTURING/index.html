@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-structuring</title>
+</head>
+<body>
+    <h1>De-structuring</h1>
+
+
+    <script>
+        // Destructing -> dis assembling things in array or objects.
+
+
+        /*
+
+
+        --------------------------traditional method-----------------------------
+            let user = {
+                name: "aggjgj",
+                address: "addresss",
+                pin: 57575
+            
+            }
+
+
+        let name = user.name;
+        let address = user.address;
+        let pin = user.pin;
+
+
+        -------------------------de-structuring-----------------------------------
+
+        let  {name, address, pin} = user;
+        
+        */
+
+
+
+        // object de-structuring;
+        let user  = {
+            name: "Arun", 
+            // age: 27,
+            city: "Coimbatore"
+        }
+
+        console.log("user object=>", user);
+
+        // let {name, age, city} = user;
+
+        // console.log("User objects=>", name, age, city);
+
+
+
+        // renaming variable
+        let {name: userName, age: userAge} = user;
+
+       console.log("name=>", userName);
+       console.log("Age=>", userAge);
+
+
+
+       let {name, age = 18} = user;
+
+       console.log("Name==>", name);
+       console.log("Age===>", age);
+       
+       // ---------------------------------------Array Destructuring------------------------------
+
+       let subjects = ["Tamil", "English", "Maths", "Chemistry"];
+
+
+        let [first, second, third, fourth] = subjects
+
+        console.log("first=>", first)
+        console.log("fourth=>", fourth);
+
+
+        // we can add default values ->  workout yourself
+
+
+        // Rest operator
+        let numbers = [1,2,3,4,5,6,7,8,9];
+
+        let [one, two, three, ...remining] = numbers;
+
+        console.log("Numbers===>", one);
+
+        console.log("Reminings===>", remining);
+        
+        
+        
+       
+        
+    </script>
+</body>
+</html>
