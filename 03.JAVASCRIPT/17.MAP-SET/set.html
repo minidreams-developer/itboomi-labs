@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set - Data structure</title>
+</head>
+<body>
+    <h1>Set data structure</h1>
+
+
+    <script>
+        /*
+            Set - Array like data strucrure;
+            
+            Create set
+            let set = new Set();
+        
+            Methods and Properties
+
+            set.add() -> adds
+            set.has() -> check whether it is present or not
+            set.delete() -> remove that property
+            set.clear() -> clear it entirely
+
+        
+        
+        */
+
+        let fruits = new Set();
+
+        console.log("Set=>", fruits);
+
+        // Adding values to set
+        fruits.add("apple");
+        fruits.add("Orange");
+        fruits.add("Mango")
+        fruits.add("apple");
+        fruits.add("Orange")
+
+
+        console.log("Set with values=>", fruits);
+        
+        
+        // checking the value
+        console.log("Set value checking=>", fruits.has("orange"));
+
+        // deleting the value
+        fruits.delete("Orange")
+
+        console.log("Set after deletion==>", fruits);
+
+
+        //---------------------TRY WITH NON-PRIMITIVE---------------------------------------------
+
+        // clear it entirely
+
+        fruits.clear();
+
+        console.log("Set after cleared=>", fruits);
+        
+        
+        
+    </script>
+</body>
+</html>
