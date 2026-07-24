@@ -60,6 +60,38 @@
         console.log("Set after cleared=>", fruits);
         
         
+
+        let ministry = new Set();
+
+        ministry.add({name: "arun"})
+
+        console.log('ministry=>', ministry);
+
+        console.log("ministry has", ministry.has({name: "arun"}));
+
+
+
+        // --------------------------------Reference by store------------------------------
+
+        // let a = "apple";  -> a = "apple";
+
+        // console.log(a)   --> search for a in storage, return a;
+
+        // let user = {name: arun}   -->  name: arun -> user  -> store in one locaiton   ->  user
+        //                                age:24     -> store in different locaiotn -> user
+
+
+        // set.add(objec)           -> store  => object
+        // set.has(objec)           -> store => object 
+
+       let user = {name: "arun"};
+
+       ministry.add(user);
+       console.log(ministry.has(user));
+       
+       
+        
+        
         
     </script>
 </body>
