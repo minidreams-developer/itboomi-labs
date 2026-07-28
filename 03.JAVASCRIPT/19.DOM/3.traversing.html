@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+</head>
+<body>
+    <h1>Traversing Elements</h1>
+
+    <ul id="list">
+        <li class="list-item">Home</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Projects</li>
+        <li class="list-item">Awards</li>
+        <li class="list-item">Contact</li>
+    </ul>
+
+
+    <script>
+        // Traversing elements
+
+        /*
+            1. Child to Parent -> parentNode
+            2. Parent to Child
+            3. Siblings
+        
+        */
+
+        // Child to Parent
+        let projects = document.querySelectorAll(".list-item")[2];
+
+        console.log(projects);
+
+        let projectParent = projects.parentNode;
+
+        console.log("projectParent==>", projectParent)
+
+
+        // Parent to Child
+
+        let list = document.querySelector("#list");
+        console.log(list);
+        console.log(list.firstElementChild);
+        console.log(list.lastElementChild);
+        console.log(list.children); // -> array
+
+        for(let listEle of list.children){
+            console.log(listEle.textContent);
+            
+        }
+        
+
+        // 1. child to parent => parentNode
+        // 2. parent to child => firstElementChild, lastElementChild, children
+        
+        
+
+        
+        
+    </script>
+</body>
+</html>
