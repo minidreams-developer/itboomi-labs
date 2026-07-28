@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - SELECTING</title>
+</head>
+<body>
+    <h1>Selecting HTML elements</h1>
+
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem quia deserunt laudantium debitis iusto pariatur, officia voluptatibus tempora non possimus, commodi qui tenetur, ratione a ad impedit ut assumenda fugit quisquam excepturi aut? Iste, est recusandae ducimus qui, sint magni molestias similique non adipisci expedita tempore reprehenderit excepturi aperiam fugiat exercitationem voluptatem corporis nemo facilis aspernatur nostrum ratione. Sed natus cumque cupiditate tempora fuga delectus cum culpa debitis vel dolor officiis ex perferendis est, incidunt provident doloremque necessitatibus illum laboriosam rem voluptates, nulla velit tenetur? Distinctio rem accusamus repellat, exercitationem eum voluptatem praesentium ex maiores iusto? Reprehenderit, recusandae modi.</p>
+
+    <ul id="list">
+        <li class="list-item">Home</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Projects</li>
+        <li class="list-item">Contacts</li>
+    </ul>
+    <hr>
+
+
+
+    <script>
+        // DOM SELECTORS
+        /*
+            1. document.getElementById()
+            2. document.getElementsByClassName()
+            3. document.getElementByTagName()
+
+
+            4. document.querySelector(css-selector);
+            5. document.querySelectorAll(); -> multiple element select
+        
+        */
+
+
+        let paragraph = document.getElementById("para")
+
+        console.log("paragraph=>", paragraph)
+
+        // dot notation with seperate namings
+
+        console.log(paragraph.id)
+
+        console.log(paragraph.textContent)
+
+
+        // Selecting Multiple-elements
+        let listItems = document.getElementsByClassName("list-item");
+
+        console.log("Listitems==>", listItems)
+
+        // console.log(listItems[0])
+        // console.log(listItems[1]);
+        // console.log(listItems[2]);
+
+        for(let list of listItems){
+            console.log(list)
+        }
+        
+        // Tag Name => work-out-yourself
+
+
+        let topic = document.querySelector("#para")
+
+        console.log("topic==>", topic);
+
+
+        let list = document.querySelectorAll(".list-item")
+
+        console.log("list===>", list)
+        
+        
+
+    </script>
+</body>
+</html>
