@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulation</title>
+</head>
+<body>
+    <h1>Manipulation html</h1>
+
+    <script>
+        // Create Elements
+        // document.createElement("tagname")
+        /*
+            Step 1: create tag
+            Step 2: Add content
+            Step 3: Add to html
+        
+        */
+
+        // step 1:
+        let h2 = document.createElement("h2");
+        console.log("h2===>", h2)
+
+
+        // step 2:
+        h2.textContent = "This is a sub Heading"
+        console.log("h2====>", h2)
+
+        // step 2.1:
+        h2.id = "head2"
+        console.log("h2====>", h2)
+
+        // step 2.2:
+        h2.className = "heading";
+
+        
+        // step 3: appendChild
+        let docs = document;
+        console.log("document=>", docs)
+        document.body.appendChild(h2)
+    </script>
+</body>
+</html>
