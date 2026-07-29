@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulating Elements</title>
+  </head>
+  <body>
+    <h1>Manipulating Elements</h1>
+
+    <ul id="list"></ul>
+
+    <button id="btn">Click</button>
+
+    <script>
+      let listItems = ["Home", "About", "Projects", "Contact"];
+      console.log(listItems);
+
+      let list = document.querySelector("#list");
+      console.log("list==>", list);
+
+      function addChildItems(listText) {
+        // Step 1:
+        let li = document.createElement("li");
+
+        // Step 2:
+        li.className = "list-items";
+        li.textContent = listText;
+
+        // Step 3:
+        list.appendChild(li);
+      }
+
+      let btn = document.querySelector("#btn");
+      /*
+        addEventListener("event", ()=> {
+             body
+        
+        
+        })
+      */
+
+      btn.addEventListener("click", () => {
+        listItems.forEach((arrItems) => {
+          addChildItems(arrItems);
+        });
+      });
+    </script>
+  </body>
+</html>
