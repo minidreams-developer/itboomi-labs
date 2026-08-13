@@ -1,0 +1,49 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
+
+const Products = () => {
+  const [products, setProducts] = useState([]);
+
+  // useEffect - hook
+
+  useEffect(() => {
+    axios
+      .get("https://fakestoreapi.com/products")
+      .then((response) => {
+        console.log("response=>", response.data);
+        setProducts(response.data);
+      })
+      .catch((error) => {
+        console.log("error=>", error);
+      });
+  }, []);
+
+  return (
+    <>
+      {products.map((product) => {
+        return (
+          <Card style={{ width: "18rem" }}>
+            <Card.Img variant="top" src={product.image} />
+            <Card.Body>
+              <Card.Title>{product.title}</Card.Title>
+              <Card.Text>{product.description}</Card.Text>
+            </Card.Body>
+            <ListGroup className="list-group-flush">
+              <ListGroup.Item>Category: {product.category}</ListGroup.Item>
+              <ListGroup.Item>Price: {product.price}</ListGroup.Item>
+              <ListGroup.Item>Rating: {product.rating.rate}</ListGroup.Item>
+            </ListGroup>
+            <Card.Body>
+              <Card.Link href="#">Card Link</Card.Link>
+              <Card.Link href="#">Another Link</Card.Link>
+            </Card.Body>
+          </Card>
+        );
+      })}
+    </>
+  );
+};
+
+export default Products;
