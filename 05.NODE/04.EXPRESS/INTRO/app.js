@@ -1,14 +1,19 @@
-let http = require("http");
+// let http = require("http");
+let express = require("express");
+let path = require("path");
+let app = express();
 
 const PORT = 5000;
 
-let server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.write("Welcome to the server");
-    res.end();
-  }
+app.use(express.static("./website"));
+
+// req methods
+// get(), post(), put(), patch(), delete()
+
+app.get("/", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./website/index.html"));
 });
 
-server.listen(PORT, () => {
-  console.log(`Server is running on ${PORT}`);
+app.listen(PORT, () => {
+  console.log("Server is running on PORT 5000");
 });
