@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
+const userRoutes = require("./routes/userRoutes.js");
 
 //process.env.variablename
 
@@ -13,6 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use("/api/users", userRoutes);
 
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Welcome....." });
